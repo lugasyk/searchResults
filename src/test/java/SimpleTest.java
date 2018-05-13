@@ -19,9 +19,13 @@ public class SimpleTest {
 
         WebElement searchButton = driver.findElement(By.cssSelector(".header-search__button.header__utility-button"));
         searchButton.click();
-        WebElement searchField = driver.findElement(By.cssSelector("..header-search__input"));
+        WebElement searchField = driver.findElement(By.cssSelector(".header-search__input"));
         searchField.sendKeys("Testttttttt");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebElement findButton = driver.findElement(By.cssSelector(".header-search__submit"));
+        findButton.click();
+        WebElement resultMessage = driver.findElement(By.cssSelector(".div.search-results__exception-message:nth-child(5)"));
+        System.out.println(resultMessage);
     }
 }
 
