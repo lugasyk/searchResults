@@ -14,7 +14,7 @@ public class HomePage {
     }
 
     public void clickOnSearchIcon(){
-        WebElement searchButton = driver.findElement(By.cssSelector(".header-search__button.header__utility-button"));
+        WebElement searchButton = driver.findElement(By.cssSelector(".header-search__button"));
         searchButton.click();
     }
 }

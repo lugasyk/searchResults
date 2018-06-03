@@ -6,21 +6,21 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * credated by Lugaskova Kate
  */
-public class SearchField {
+public class ClickFindButton {
 
     protected WebDriver driver;
     @FindBy(
-            css = ".header-search__input"
+            css = ".header-search__submit"
     )
-    private WebElement searchField;
+     WebElement findButton;
 
 
-    public SearchField(WebDriver driver) {
+    public ClickFindButton(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public void enterValueForSearch(String query) {
-        searchField.sendKeys(query);
+    public void ClickFindButtonForSearch() {
+        findButton.click();
     }
 }
