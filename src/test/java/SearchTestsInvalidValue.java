@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class SearchTests extends TestBase {
+public class SearchTestsInvalidValue extends TestBase {
 
     @Test
     public void navigateToEpamWebSiteSearchAndCheckresult() {

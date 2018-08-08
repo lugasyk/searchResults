@@ -10,7 +10,7 @@ public class TestBase {
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.gecko.driver", "drv/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "drv/gecko-driver");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://www.epam.com/");
